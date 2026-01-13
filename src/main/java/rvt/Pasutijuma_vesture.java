@@ -20,12 +20,13 @@ public class Pasutijuma_vesture {
 
             String name = dati[1];
             String id = dati[0];
-            String prouct = dati[2];
+            String product = dati[2];
             int quantity = Integer.valueOf(dati[3]);
-            int price = Integer.valueOf(dati[4]);
+            double price = Double.valueOf(dati[4]);
+            double sum = quantity + price;
 
             System.out.println(
-                "Pasutijums: #" + id + ":" + name + "pasutija " + quantity + prouct + "(" + price + ")" + "-> Kopa: " + price * quantity + "EUR"
+                "Pasutijums: #" + id + ": " + name + " pasutija " + quantity + " "+  product + " (" + price + ") " + "-> Kopa: " + sum + "EUR"
             );
         }
 
